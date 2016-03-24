@@ -21,6 +21,7 @@ using WebApi2Book.Data.SqlServer.QueryProcessors;
 using WebApi2Book.Web.Api.AutoMappingConfiguration;
 using AutoMapper;
 using WebApi2Book.Web.Api.MaintenanceProcessing;
+using WebApi2Book.Web.Api.Security;
 
 namespace WebApi2Book.Web.Api
 {
@@ -41,6 +42,7 @@ namespace WebApi2Book.Web.Api
             container.Bind<IDateTime>().To<DateTimeAdapter>().InSingletonScope();
             container.Bind<IAddTaskQueryProcessor>().To<AddTaskQueryProcessor>().InRequestScope();
             container.Bind<IAddTaskMaintenanceProcessor>().To<AddTaskMaintenanceProcessor>().InRequestScope();
+            container.Bind<IBasicSecurityService>().To<BasicSecurityService>().InSingletonScope();
         }
 
         private void ConfigureNHibernate(IKernel container)
