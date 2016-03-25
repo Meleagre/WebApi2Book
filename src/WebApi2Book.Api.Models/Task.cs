@@ -9,6 +9,7 @@ namespace WebApi2Book.Api.Models
     public class Task : ILinkContaining
     {
         private List<Link> _links;
+        private bool _shouldSerializeAssignees;
 
         public long? TaskId { get; set; }
         public string Subject { get; set; }
@@ -29,5 +30,23 @@ namespace WebApi2Book.Api.Models
         {
             Links.Add(link);
         }
+
+        #region ShouldSerialize implementation
+
+        // By convention ASP.NET Web API calls this methods using reflection to determine
+        // if specifig public properties should be seralized. Here we control serialization
+        // of Assignees property.
+
+        public void SetShouldSerializeAssignees(bool shouldSerailize)
+        {
+            _shouldSerializeAssignees = shouldSerailize;
+        }
+
+        public bool ShouldSerializeAssignees()
+        {
+            return _shouldSerializeAssignees;
+        }
+
+        #endregion
     }
 }
