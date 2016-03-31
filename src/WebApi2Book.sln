@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi2Book.Common", "WebAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi2Book.Web.Api", "WebApi2Book.Web.Api\WebApi2Book.Web.Api.csproj", "{38B2F664-8BE7-47FF-8D39-7748675771E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtUtility", "JwtUtility\JwtUtility.csproj", "{0A991DAE-2102-441E-91F8-B1FF693A4B48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +93,10 @@ Global
 		{38B2F664-8BE7-47FF-8D39-7748675771E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38B2F664-8BE7-47FF-8D39-7748675771E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38B2F664-8BE7-47FF-8D39-7748675771E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A991DAE-2102-441E-91F8-B1FF693A4B48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A991DAE-2102-441E-91F8-B1FF693A4B48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A991DAE-2102-441E-91F8-B1FF693A4B48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A991DAE-2102-441E-91F8-B1FF693A4B48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

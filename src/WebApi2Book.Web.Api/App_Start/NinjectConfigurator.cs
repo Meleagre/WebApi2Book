@@ -48,6 +48,8 @@ namespace WebApi2Book.Web.Api
             container.Bind<IBasicSecurityService>().To<BasicSecurityService>().InSingletonScope();
             container.Bind<ITaskWorkflowProcessor>().To<TaskWorkflowProcessor>().InRequestScope();
             container.Bind<ITaskByIdInquiryProcessor>().To<TaskByIdInquiryProcessor>().InRequestScope();
+            container.Bind<IUpdateTaskQueryProcessor>().To<UpdateTaskQueryProcessor>().InRequestScope();
+            container.Bind<ITaskUsersMaintenanceProcessor>().To<TaskUsersMaintenanceProcessor>().InRequestScope();
         }
 
         private void ConfigureNHibernate(IKernel container)

@@ -53,6 +53,7 @@
     <Compile Include="Entities\User.cs" />
     <Compile Include="QueryProcessors\IAddTaskQueryProcessor.cs" />
     <Compile Include="QueryProcessors\ITaskByIdQueryProcessor.cs" />
+    <Compile Include="QueryProcessors\IUpdateTaskQueryProcessor.cs" />
     <Compile Include="QueryProcessors\IUpdateTaskStatusQueryProcessor.cs" />
   </ItemGroup>
   <ItemGroup>
